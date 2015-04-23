@@ -13,3 +13,6 @@ and [virtualenv](https://virtualenv.pypa.io/en/latest/).
 
     (env)$ pip install -r requirements.txt
     (env)$ ipython notebook
+    
+### Theory
+
