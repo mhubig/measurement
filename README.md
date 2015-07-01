@@ -1,18 +1,20 @@
 ### Prerequisites
 
-In order to use the includet iPython Notebooks, you need to install [Python3](https://www.python.org/)
-and [virtualenv](https://virtualenv.pypa.io/en/latest/).
+In order to use the iPython Notebooks, you need to install [Python3][1] and [virtualenvwrapper][2].
 
-    # On a mac this can easily be done with homebrew
+    # On a mac this can easily be done with homebrew and pip
     $ brew install python3
-    $ pip install virtualenv
-    $ virtualenv env
-    $ source env/bin/activate
+    $ pip install virtualenvwrapper
 
-### Setup & Start
+### Clone & setup a virtualenv
 
-    (env)$ pip install -r requirements.txt
-    (env)$ ipython notebook
-    
-### Theory
+    $ git clone git@github.com:mhubig/measurement.git
+    $ cd measurement
+    $ mkvirtualenv -a $(pwd) -r requirements.txt -p python3 measurement
+    (measurement)$
 
+### Start the iPython notebook server
+    (measurement)$ ipython notebook
+
+[1]: https://www.python.org
+[2]: http://virtualenvwrapper.readthedocs.org/en/latest/index.html
